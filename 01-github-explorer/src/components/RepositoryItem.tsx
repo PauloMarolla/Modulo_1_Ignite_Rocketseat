@@ -1,6 +1,14 @@
 import React from 'react';
 
-const RepositoryItem = (props) => {
+interface RepositoryItemProps {
+  repository: {
+    name: string,
+    description: string,
+    html_url: string
+  }
+}
+
+const RepositoryItem = (props: RepositoryItemProps) => {
   return (
     <>
       <li>
